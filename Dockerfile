@@ -8,7 +8,7 @@ RUN  apt-get update; \
      apt-get install -y apt-transport-https curl; \
      curl -slL https://apt.signalsciences.net/gpg.key | apt-key add -; \
      apt-get update; \
-     apt-get install -y sigsci-agent=1.18.1~xenial; \
-     apt-get clean 
+     apt-get install -y sigsci-agent=2.1.2~xenial; \
+     apt-get clean
 
 CMD ["/usr/sbin/sigsci-agent"]
